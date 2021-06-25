@@ -1,0 +1,506 @@
+*{
+    text-decoration: none;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+p{
+    color: rgb(107, 105, 105);
+}
+.sliderDiv{
+    background-image: url(image1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: auto;
+    animation: slider 13s infinite linear;
+}
+.blur{
+    background-color: rgb(0, 0, 0,0.5);
+    /* height: 100%; */
+    height: 49vw;
+    color: white;
+    text-transform: uppercase;
+    line-height: 4.3vw;
+    font-size: 2vw;
+}
+.text{
+    position: absolute;
+    left: 50vw;
+    top: 40vw;
+    letter-spacing: 0.5vw;
+    transform: translate(-20vw, -26vw);
+}
+.sliderDiv>.blur>.text>h1> span{
+    color: rgb(12, 179, 245);
+}
+.sliderDiv>.blur>.text>.slider-btn{
+    position: absolute;
+    left: 30%;
+    margin-top: 1.3vw;
+    padding: 0.8vw;
+    font-size: 1.2vw;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(7, 7, 7,0.3);
+    
+}
+.sliderDiv>.blur>.text>.slider-btn:hover{
+    background-color: rgb(4, 253, 253,0.8);
+    color: black;
+    transition:.5s;
+}
+.sliderDiv>.blur>.text>p{
+    font-size: 1.4vw;
+}
+
+@keyframes slider{
+    20%{
+        background-image: url(image1.jpg);
+        
+    }
+    /* 40%{
+        background-image: url(image2.jpg);
+        
+    } */
+    50%{
+        
+        background-image: url(image4.jpg);
+    }
+    100%{
+        
+        background-image: url(image3.jpg);
+    }
+    
+}
+
+.navBar{
+    position:sticky;
+    top: 0%;
+    width: 100%;
+    display: flex;
+    text-transform: uppercase;
+    background-color: rgb(18, 195, 240);
+    line-height: 5.4vw;
+    height: 5.5vw;
+}
+.navBar>.logo{
+    position: absolute;
+    left: 12vw;
+    color: white;
+    font-size: 1.3vw;
+    /* font-size: 1vw; */
+    line-height: 5.5vw;
+}
+.navBar>.logo>h1>span{
+    font-size: 0.8vw;
+    word-spacing: 0.4vw;
+}
+.navBar>.logo>h1>a{
+    color: white;
+}
+.navBar>.listItems>ul{
+    display: flex;
+    list-style: none;
+    line-height: 6.1vw;
+    position: absolute;
+    right: 7vw;
+}
+.navBar>.listItems>ul>li{
+    margin-left: 1.5vw;
+}
+.navBar>.listItems>ul>li>a{
+    color: white;
+    font-size: 1.1vw;
+}
+
+.navBar>.listItems>ul>li>a:hover{
+    border-bottom: 0.2vw solid rgb(114, 112, 112,0.7);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s linear;
+    /* color: ;*/ 
+}
+.navBar>.listItems>ul>li>a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.second>.heading{
+    width: fit-content;
+    margin: auto;
+    margin-top: 5vw;
+    text-align: center;
+}
+.second>.heading>h1{
+    font-size: 3vw;
+    
+}
+.second>.heading>p{
+    margin-top: 0.6vw;
+    font-size: 1.2vw;
+    word-spacing: 0.5vw;
+    color: rgb(107, 110, 110);
+}
+.second-container{
+    width: fit-content;
+    margin: auto;
+    margin-top: 3vw;
+    padding: 4vw;
+}
+.second-container>.box{
+    display: inline-block;
+    padding-bottom: 3vw;
+    padding-left: 0.3vw;
+    padding-right: 0.3vw;
+    width: 17vw;
+    margin-left: 3vw;
+    /* line-height: 1vw; */
+    border: 1px solid rgb(128, 128, 128,0.2);
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+.second-container>.box>.icon{
+    margin: auto;
+    margin-top: 2vw;
+    margin-bottom: 0.8vw;
+    background-color: rgb(61, 137, 238);
+    color: white;
+    font-size: 2vw;
+    height: 5vw;
+    border-radius: 0.7vw;
+    width: 5vw;
+}
+.second-container>.box>.icon>#icons{
+    color: white;
+    line-height: 5vw;
+}
+section{
+    /* height: 50vw; */
+    /* padding-left: 6vw; */
+    width: auto;
+    background-image: url("image1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+section>.section{
+    height: auto;
+    width: auto;
+    /* text-align: center; */
+    color: white;
+    background-color: rgb(0, 0, 0,0.5);
+    font-size: 1.7vw;
+    
+}
+section>.section>.text1{
+    padding: 30px 0px;
+}
+section>.section>.text1>div{
+    /* margin: auto; */
+    width: 50vw;
+    padding: 3vw 7vw;
+}
+section>.section>.text1>div>p{
+    font-size: 1.2vw;
+    color: white;
+    
+}
+.portfolio-text{
+    /* display: inline-block; */
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+}
+.portfolio-text>h1{
+    margin-top: 3vw;
+    font-size: 3.3vw;
+}
+.portfolio-text>p{
+    /* margin-top: 3vw; */
+    font-size: 1.3vw;
+}
+.portfolio-images{
+    padding: 5vw 3vw;
+    height: auto;
+    width: auto;
+    /* border: 2px solid; */
+}
+.portfolio-images>.portfolio-images-container>div{
+    display: inline-block;
+    margin: 0vw;
+    background-size: cover;
+    background-position: center;
+    height: 20vw;
+    width: 20vw;
+}
+.portfolio-images>.portfolio-images-container>.div1{
+    background-image:url("image1.jpg");
+}
+.portfolio-images>.portfolio-images-container>.div2{
+    background-image:url("im1.jpg");
+}
+.portfolio-images>.portfolio-images-container>.div3{
+    background-image:url("im2.jpg");
+}
+.portfolio-images>.portfolio-images-container>.div4{
+    background-image:url("im3.jpg");
+}
+.portfolio-images>.portfolio-images-container>.div5{
+    background-image:url("im4.jpg");
+}
+.portfolio-images>.portfolio-images-container>.div6{
+    background-image:url("im5.jpg");
+}
+.portfolio-images>.portfolio-images-container>.div7{
+    background-image:url("im6.jpg");
+}
+.portfolio-images>.portfolio-images-container>.div8{
+    background-image:url("im7.jpg");
+}
+.portfolio-images-container{
+    /* display: inline-block; */
+    width: fit-content;
+    margin: auto;
+
+}
+.Workshop-part{
+    background-image: url("image2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+    
+}
+.Workshop-part>.text3{
+    /* text-align: center; */
+    height: 100%;
+    background-color: rgb(10, 10, 10, 0.7);
+}
+.Workshop-part>.text3>div{
+    margin-left: 10vw;
+    font-size: 1.3vw;
+    line-height: 1.5vw;
+    padding-top: 1.3vw;
+    padding-bottom: 1vw;
+    color: white;
+    width: 100%;
+}
+.Workshop-part>.text3>div>h1{
+    margin-top: 3vw;
+}
+.Workshop-part>.text3>div>p{
+    width: 30vw;
+    color: white;
+    margin-left: 1vw;
+}
+.officers{
+    height: auto;
+    padding: 1vw;
+    text-align: center;
+}
+
+.officers>h1{
+    font-size: 3.2vw;
+    margin-top: 2vw;
+    margin-bottom: 1.1vw;
+}
+
+.officers>p{
+    font-size: 1.1vw;
+    margin-bottom: 1vw;
+}
+.officers>.officers-pics>.pics>img{
+    width: 13vw;
+    height: 18vw;
+    border-radius: 0.5vw;
+}
+
+.officers>.officers-pics>.pics>h1{
+    font-size: 1.8vw;
+}
+.officers>.officers-pics>.pics>h3{
+    font-size: 1.1vw;
+    margin: 0.6vw;
+
+}
+.officers>.officers-pics>.contact-media>.fa-telegram{
+    margin-left: 2vw;
+    color: rgb(28, 155, 240);
+    font-size: 3vw;
+    margin-top: 1vw;
+}
+.officers>.officers-pics>.contact-media>.fa-instagram-square{
+    margin-left: 2vw;
+    color: rgb(245, 38, 38);
+    font-size: 3vw;
+    margin-top: 1vw;
+}
+.officers>.officers-pics>.contact-media>.fa-linkedin{
+    margin-left: 2vw;
+    color: rgb(44, 80, 241);
+    font-size: 3vw;
+    margin-top: 1vw;
+}
+.winners{
+    background-image: url("winner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+    margin-top: 1vw;
+}
+.winners>.winners-icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    height: 30vw;
+    background-color: rgba(5, 5, 5, 0.5);
+}
+.winners>.winners-icons>.icon-box{
+    color: white;
+    margin-left: 7vw;
+    font-size: 3.5vw;
+    height: 7vw;
+    width: 7vw;
+}
+.winners>.winners-icons>.icon-box>h1{
+    font-size: 2vw;
+    color:rgb(212, 208, 208);
+}
+.winners>.winners-icons>.icon-box>h4{
+    font-size: 1.1vw;
+    color:rgb(197, 196, 196);
+}
+.mapp{
+    margin: 3vw 2vw;
+    margin-top: 2vw;
+}
+.contactForm{
+    background-image: url("contact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+}
+.contactForm>.form{
+    height: 100%;
+    padding-top: 4vw;
+    color: white;
+    background-color: rgb(0, 0, 0,0.7);
+    padding-bottom: 7vw;
+}
+.contactForm>.form>div{
+    display: flex;
+
+}
+.contactForm>.form>div>form{
+    margin-top: 5vw;
+    margin-left: 10vw;
+    
+}
+.contactForm>.form>div>form>input{
+    background-color: rgb(0, 0, 0, 0.3);
+    color: white;
+    font-size: 1vw;
+    padding: 0.5vw;
+    margin-left: 1.3vw;
+    border-radius: 0.3vw;
+}
+.contactForm>.form>div>form>input:hover,.contactForm>.form>div>form>textarea:hover{
+    box-shadow: 0.1vw 0.1vw 0.3vw 0.1vw skyblue;
+           
+}
+
+.contactForm>.form>div>form>.subject{
+    width: 29.1vw;
+    margin-top: 0.2vw;
+}
+.contactForm>.form>h1{
+    text-align: center;
+    font-size: 3.2vw;
+}
+.contactForm>.form>p{
+    text-align: center;
+    font-size: 1vw;
+}
+.contactForm>.form>div>form>textarea{
+    padding: 1vw;
+    font-size: 1.1vw;
+    color: white;
+    background-color: rgb(0, 0, 0,0.4);
+    border-radius: 0.3vw;
+    margin-left: 1.3vw;
+    width: 29.1vw;
+    height: 10vw;
+}
+.contactForm>.form>div>form>.submit-btn{
+    width: 29.1vw;
+    font-size: 2vw;
+    background-color: rgb(22, 207, 253);
+}
+.contactForm>.form>div>.contact_Address{
+    font-size: 1vw;
+    text-decoration: none;
+    font-weight: lighter;
+    padding-top: 7vw;
+    padding-left: 7vw;
+    color: rgb(228, 235, 235,0.8);
+}
+.secondLast{
+    background-color: rgb(3, 3, 3,0.8);
+    height: auto;
+    padding: 1.5vw;
+    margin-top: 1vw;
+}
+.secondLast>.image{
+    margin: auto;
+    /* margin-left: 2vw; */
+    background-image: url(im1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1vw;
+    height: 8vw;
+    /* margin-top: 2vw; */
+    width: 12vw;
+}
+.secondLast>.secondLast-contact{
+    /* margin: auto; */
+    text-align: center;
+
+}
+.secondLast>.secondLast-contact>.fa-telegram{
+    margin-left: 1vw;
+    color: rgb(20, 91, 245);
+    font-size: 2vw;
+    margin-top: 1vw;
+}
+.secondLast>.secondLast-contact>.fa-instagram-square{
+    margin-left: 1vw;
+    color: rgb(245, 38, 38);
+    font-size: 2vw;
+    margin-top: 1vw;
+}
+.secondLast>.secondLast-contact>.fa-linkedin{
+    margin-left: 1vw;
+    color: rgb(44, 80, 241);
+    font-size: 2vw;
+    margin-top: 1vw;
+}
+footer{
+    position: absolute;
+    left: 4vw;
+    height: 5vw;
+    padding: 1vw;
+    background-color: white;
+}
+footer>p{
+    color: blue;
+    font-size: 1.05vw;
+}
