@@ -8,18 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="first.css">
-    <link href="all1.css"rel="stylesheet">
+    <link href="C:\Users\DELL\Downloads\B-Tech_Second_Year\Harry_Bhai\HTML\Table_projects\FullStackWebsite\fontawesome\css\all.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <div class="sliderDiv">
+    <div class="sliderDiv" id="home">
         <div class="blur">
             <div class="text">
                 <h1 class="first">hello, <br> This is <span> CXI</span></h1>
                 <h1 class="second">Say hello to <span> CXI</span></h1>
                 <p>Computer Science club of Miet</p>
-                <button class="slider-btn">WORKSHOP</button>
+                <button class="slider-btn" ><a href="#workshop"> WORKSHOP</a></button>
             </div>
         </div>
     </div>
@@ -31,19 +31,19 @@
         </div>
         <div class="listItems">
             <ul>
-                <li><a href="#"> Home</a></li>
-                <li><a href="#"> Service</a></li>
-                <li><a href="#"> About Us</a></li>
-                <li><a href="#"> portfolio</a></li>
-                <li><a href="#"> workshop</a></li>
-                <li><a href="#"> team</a></li>
-                <li><a href="#"> club constitution</a></li>
-                <li><a href="#"> Contact</a></li>
+                <li><a href="#home"> Home</a></li>
+                <li><a href="#service"> Service</a></li>
+                <li><a href="#about_us"> About Us</a></li>
+                <li><a href="#portfolio"> portfolio</a></li>
+                <li><a href="#workshop"> workshop</a></li>
+                <li><a href="#team"> team</a></li>
+                <li><a href="#club_constitution"> club constitution</a></li>
+                <li><a href="#contact"> Contact</a></li>
             </ul>
         </div>
     </div>
 
-    <div class="second">
+    <div class="second" id="service">
         <div class="heading">
             <h1>What we do?</h1>
             <p>COLLABORATION x INNOVATION. Precisely</p>
@@ -110,13 +110,13 @@
             </div>
         </div>
     </div>
-    <section>
-        <div class="section">
+    <section >
+        <div class="section" id="about_us">
             <div class="text1">
                 <div>
                     <h1>About Us</h1>
                     <br>
-                    <p> The purpose of CXI shall be to promote and Organize project skills and experience at MIET. The
+                    <p > The purpose of CXI shall be to promote and Organize project skills and experience at MIET. The
                         club
                         aims to bring in collaboration from the students so as to build products Or provide services
                         that
@@ -138,7 +138,7 @@
             <p>We are currently working on these projects. We have more ideas as well! Join our team to be a part of
                 these projects &  also to give your valuable ideas for the projects.</p>
         </div>
-        <div class="portfolio-images">
+        <div class="portfolio-images" id="portfolio">
             <div class="portfolio-images-container">
                 <div class="div1"></div>
                 <div class="div2"></div>
@@ -151,7 +151,7 @@
             </div>
         </div>
     </div>
-    <div class="Workshop-part">
+    <div class="Workshop-part" id="workshop">
         <div class="text3">
             <div>
                 <h1>Web Development Workshop</h1><br><br>
@@ -167,6 +167,7 @@
                     information and provides the passengers an interactive list and routes of appropriate buses
                     available
                     near them with their appropriate timings which can drop them directly at their station within time.
+                    <br>
                     An
                     Admin module controls all the predefined factors like management of buses, routes, timings,
                     conductors,
@@ -175,7 +176,7 @@
         </div>
     </div>
     
-    <div class="officers">
+    <div class="officers" id="team">
         <h1>The Officers</h1>
         <p>We at CXI believe in coming and working together to provide services to the world!</p>
         <div class="officers-pics">
@@ -186,13 +187,13 @@
             </div>
             <div class="contact-media">
                 <a href="#" class="fab fa-telegram"></a>
-                <a href="#" class="fab fa-instagram-square"></a>
+                <a href="https://www.instagram.com/yashmittal100201/" class="fab fa-instagram-square"></a>
                 <a href="https://www.linkedin.com/feed/" class="fab fa-linkedin"></a>
             </div>
         </div>
     </div>
 
-    <div class="winners">
+    <div class="winners" id="club_constitution">
         <div class="winners-icons">
             <!-- <h1>hello</h1> -->
             <div class="icon-box"><i class="fas fa-users" id="icons"></i>
@@ -220,19 +221,19 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3490.505482178385!2d77.72746381504412!3d28.97238868228487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c64c6def8f441%3A0xc7d804a697d3258e!2sGarh%20Rd%2C%20New%20Nehru%20Nagar%2C%20Vaishali%20Colony%2C%20Panchsheel%20Colony%2C%20Meerut%2C%20Uttar%20Pradesh%20250003!5e0!3m2!1sen!2sin!4v1623785626799!5m2!1sen!2sin"
             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-    <div class="contactForm">
+    <div class="contactForm" id="contact">
         <div class="form">
             <h1>Contact Us</h1><br>
-            <p>Inquiries? Feedback? Need some help?
+            <p class="textanimation">Inquiries? Feedback? Need some help?
                 <br>
                 Get in touch with us!!
             </p>
             <div>
-            <form action="">
-                <input type="text"placeholder="Name">
-                <input type="text"placeholder="Email Address"><br><br>
-                <input type="text"placeholder="Subject" class="subject"><br><br>
-                <textarea placeholder="Enter Your Message"></textarea><br><br>
+            <form action="Contact-Us.php">
+                <input type="text" name="NameOfUser" placeholder="Name">
+                <input type="text" name="EmailAddressOfUser" placeholder="Email Address"><br><br>
+                <input type="text" name="Subject" placeholder="Subject" class="subject"><br><br>
+                <textarea name="UsersMessage" placeholder="Enter Your Message" ></textarea><br><br>
                 <input type="submit" placeholder="Submit Now" class="submit-btn"></input>
 
             </form>
@@ -260,7 +261,22 @@
     <footer>
         <p>© 2019 CXI,Meerut Institute Of Engineering and  Technology,Meerut,250005.</p>
     </footer>
+    <script>
+        const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 1200,
+    reset: true
+});
 
+/*SCROLL HOME*/
+sr.reveal('h1',{}); 
+sr.reveal('.textanimation',{delay: 200}); 
+sr.reveal('.home__img',{delay: 400}); 
+sr.reveal('.home__social-icon',{ interval: 200}); 
+
+    </script>
 
 </body>
+
 </html>
