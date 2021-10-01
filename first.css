@@ -40,9 +40,11 @@ p{
     padding: 0.8vw;
     font-size: 1.2vw;
     border-radius: 10px;
-    color: white;
     background-color: rgb(7, 7, 7,0.3);
     
+}
+.sliderDiv>.blur>.text>.slider-btn a{
+    color: white;
 }
 .sliderDiv>.blur>.text>.slider-btn:hover{
     background-color: rgb(4, 253, 253,0.8);
