@@ -43,7 +43,10 @@ p{
     background-color: rgb(7, 7, 7,0.3);
     
 }
-.sliderDiv>.blur>.text>.slider-btn a{
+.sliderDiv>.blur>.text>.slider-btn>a{
+    display: inline-block;
+    position: relative;
+    padding: 0.8vw;
     color: white;
 }
 .sliderDiv>.blur>.text>.slider-btn:hover{
